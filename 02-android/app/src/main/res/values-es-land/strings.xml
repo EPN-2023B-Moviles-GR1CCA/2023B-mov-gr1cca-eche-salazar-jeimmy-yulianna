@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texto_saludo">LAND ES</string>
+    <color name="bk_color">#FF6200EE</color>
+    <color name="tx_color">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gr1accvaes2023b</string>
+    <string name="texto_saludo">Hola</string>
+    <color name="bk_color">#FF3700B3</color>
+    <color name="tx_color">#FFFFFFFF</color>
+
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+</resources>
+
