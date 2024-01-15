@@ -1,0 +1,2 @@
+1,Leonardo Da Vinci,1452-04-15,2,Italia,true,2/3
+3,Vincent van Gogh,1853-03-30,5,Países Bajos,true,4

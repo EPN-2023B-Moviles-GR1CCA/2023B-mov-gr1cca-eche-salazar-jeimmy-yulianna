@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a15a4e55-c406-45a3-ab6b-0c73dc359231" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-deber01/Crude_EcheJeimmy/src/main/kotlin/CRUD/ArtistaCRUD.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-deber01/Crude_EcheJeimmy/src/main/kotlin/CRUD/ObraCRUD.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-deber01/Crude_EcheJeimmy/src/main/kotlin/Entidades/Artista.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-deber01/Crude_EcheJeimmy/src/main/kotlin/Entidades/ObraDeArte.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-deber01/Crude_EcheJeimmy/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-android/app/src/main/java/com/example/gr1accvaes2023b/CIntentExplicitoParametros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-android/app/src/main/java/com/example/gr1accvaes2023b/CIntentExplicitoParametros.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-android/app/src/main/java/com/example/gr1accvaes2023b/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-android/app/src/main/java/com/example/gr1accvaes2023b/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-android/app/src/main/res/layout/activity_cintent_explicito_parametros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-android/app/src/main/res/layout/activity_cintent_explicito_parametros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-android/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-android/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-android/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +80,7 @@
       <workItem from="1701877542428" duration="27000" />
       <workItem from="1701877580238" duration="338000" />
       <workItem from="1701877936679" duration="10355000" />
+      <workItem from="1704353662267" duration="4601000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,11 @@
 package Entidades
 
 data class ObraDeArte (
-    val id: Int,
-    val titulo: String,
-    val disciplinaArtistica: String,
-    val anoCreacion: Int,
-    val valorEstimado: Double,
-    val esAbstracta: Boolean,
-    val idArtista: Int // Identificador del artista asociado a la obra
+    var id: Int,
+    var titulo: String,
+    var disciplinaArtistica: String,
+    var anoCreacion: Int,
+    var valorEstimado: Double,
+    var esAbstracta: Boolean,
+    var idArtista: Int
 )

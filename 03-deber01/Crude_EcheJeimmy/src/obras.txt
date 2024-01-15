@@ -1,0 +1,3 @@
+2,La Mona Lisa,Pintura,1503,8.6E8,false,1
+3,Guernica,Pintura,1936,2.0E9,true,1
+4,La noche estrellada,Pintura,1889,1.0E13,true,3
