@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoArtista">
+
+    <TextView
+        android:id="@+id/tv_title_info_artista"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:autoText="false"
+        android:background="#61E892"
+        android:lineSpacingExtra="14sp"
+        android:text="DETALLES ARTISTA"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="DETALLES ARTISTA" />
+
+    <TextView
+        android:id="@+id/tv_nombre_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_info_artista" />
+
+    <TextView
+        android:id="@+id/tv_fecha_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fecha nacimiento:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nombre_artista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nombre_artista"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_artista" />
+
+    <TextView
+        android:id="@+id/tv_obras_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Obras:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fecha_artista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_fecha_artista"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha_artista" />
+
+    <TextView
+        android:id="@+id/tv_pais_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Pais:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_obras_artista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_obras_artista"
+        app:layout_constraintTop_toBottomOf="@+id/tv_obras_artista" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Obras Registradas:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_obras_artista"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/tv_obras_artista"
+        app:layout_constraintTop_toBottomOf="@+id/tv_obras_artista" />
+
+    <TextView
+        android:id="@+id/tv_internacional_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inernacional:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_obras_artista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/tv_obras_artista"
+        app:layout_constraintTop_toTopOf="@+id/tv_obras_artista"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/lv_obras"
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="212dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_info_artista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_info_artista"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_info_artista" />
+
+    <Button
+        android:id="@+id/btn_nueva_obra"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Nueva Obra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoObra">
+
+    <TextView
+        android:id="@+id/tv_title_info_obra"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:autoText="false"
+        android:background="#61E892"
+        android:lineSpacingExtra="14sp"
+        android:text="DETALLES OBRA"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="DETALLES OBRA" />
+
+    <TextView
+        android:id="@+id/tv_titulo_obra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Título:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_info_obra"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_info_obra"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_info_obra" />
+
+    <TextView
+        android:id="@+id/tv_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="Artista:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_info_obra"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_info_obra"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_info_obra" />
+
+    <TextView
+        android:id="@+id/tv_disciplina_obra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Disciplina:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_titulo_obra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_titulo_obra"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_obra" />
+
+    <TextView
+        android:id="@+id/tv_anio_obra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Año:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_disciplina_obra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_disciplina_obra"
+        app:layout_constraintTop_toBottomOf="@+id/tv_disciplina_obra" />
+
+    <TextView
+        android:id="@+id/tv_valor_obra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="Valor:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_anio_obra"
+        app:layout_constraintStart_toEndOf="@+id/tv_anio_obra"
+        app:layout_constraintTop_toTopOf="@+id/tv_anio_obra"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_abstracta_obra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Es Abstracta:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_anio_obra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_anio_obra"
+        app:layout_constraintTop_toBottomOf="@+id/tv_anio_obra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
