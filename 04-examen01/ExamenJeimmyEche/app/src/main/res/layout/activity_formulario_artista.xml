@@ -12,7 +12,8 @@
         android:layout_width="0dp"
         android:layout_height="28dp"
         android:autoText="false"
-        android:background="#61E892"
+        android:background="#009688"
+        android:fontFamily="casual"
         android:lineSpacingExtra="14sp"
         android:text="CREAR ARTISTA"
         android:textAlignment="center"
@@ -27,15 +28,28 @@
         tools:text="CREAR ARTISTA" />
 
     <EditText
+        android:id="@+id/td_nacimiento_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nacimiento (yyyy-mm-dd)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/pt_obras_artista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_obras_artista"
+        app:layout_constraintTop_toBottomOf="@+id/pt_obras_artista" />
+
+    <EditText
         android:id="@+id/pt_id_artista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:hint="id"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -43,7 +57,7 @@
         android:id="@+id/pt_nombre_artista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
@@ -53,27 +67,40 @@
         app:layout_constraintTop_toBottomOf="@+id/pt_id_artista" />
 
     <EditText
-        android:id="@+id/td_nacimiento_artista"
+        android:id="@+id/pt_obras_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Cantidad de obras"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/pt_nombre_artista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_nombre_artista"
+        app:layout_constraintTop_toBottomOf="@+id/pt_nombre_artista" />
+
+    <Switch
+        android:id="@+id/sw_internacional_artista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Nacimiento (yyyy-mm-dd)"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/pt_obras_artista"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/pt_obras_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_obras_artista" />
+        android:text="Es internacional"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/pt_pais_artista"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/pt_pais_artista"
+        app:layout_constraintTop_toBottomOf="@+id/pt_pais_artista" />
 
     <Button
         android:id="@+id/btn_guardar_artista"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="76dp"
         android:text="Guardar"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/sw_internacional_artista"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/sw_internacional_artista"
         app:layout_constraintTop_toBottomOf="@+id/sw_internacional_artista" />
 
@@ -89,30 +116,5 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/td_nacimiento_artista"
         app:layout_constraintTop_toBottomOf="@+id/td_nacimiento_artista" />
-
-    <Switch
-        android:id="@+id/sw_internacional_artista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Es internacional"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/pt_pais_artista"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="@+id/pt_pais_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_pais_artista" />
-
-    <EditText
-        android:id="@+id/pt_obras_artista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Cantidad de obras"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/pt_nombre_artista"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/pt_nombre_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_nombre_artista" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

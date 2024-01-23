@@ -86,21 +86,18 @@ class BDMemoria {
 
         init {
 
-            artistas.add(Artista(1,"Artista1",Date(2000,1,1),10,"Ecuador",true))
-            artistas.add(Artista(2,"Artista2",Date(2000,1,1),10,"Colombia",true))
-            artistas.add(Artista(3,"Artista3",Date(2000,1,1),10,"Venezuela",true))
-            artistas.add(Artista(4,"Artista4",Date(2000,1,1),10,"Argentina",true))
-            artistas.add(Artista(5,"Artista5",Date(2000,1,1),10,"España",true))
+            artistas.add(Artista(1, "Pablo Picasso", Date(1881, 10, 25), 10, "España", false))
+            artistas.add(Artista(2, "Frida Kahlo", Date(1907, 7, 6), 10, "México", false))
+            artistas.add(Artista(3, "Vincent van Gogh", Date(1853, 3, 30), 10, "Países Bajos", false))
+            artistas.add(Artista(4, "Leonardo da Vinci", Date(1452, 4, 15), 10, "Italia", false))
+            artistas.add(Artista(5, "Claude Monet", Date(1840, 11, 14), 10, "Francia", false))
 
-            obras.add(Obra(1,1,"obra1", "oleo",2000,20.0,true))
-            obras.add(Obra(2,1,"obra2", "oleo",2001,21.0,false))
-            obras.add(Obra(3,1,"obra3", "oleo",2002,22.0,true))
-            obras.add(Obra(4,2,"obra4", "oleo",2003,23.0,false))
-            obras.add(Obra(5,2,"obra5", "oleo",2004,24.0,true))
-            obras.add(Obra(6,2,"obra6", "oleo",2005,25.0,false))
-            obras.add(Obra(7,3,"obra7", "oleo",2006,26.0,true))
-            obras.add(Obra(8,3,"obra8", "oleo",2007,27.0,false))
-            obras.add(Obra(9,3,"obra9", "oleo",2008,28.0,true))
+
+            obras.add( Obra(1, 1, "Guernica", "Pintura", 1937, 0.0, true))
+            obras.add(Obra(2, 2, "Las dos Fridas", "Pintura", 1939, 0.0, true))
+            obras.add(Obra(3, 3, "Noche estrellada", "Pintura", 1889, 0.0, true))
+            obras.add(Obra(4, 4, "La última cena", "Pintura", 1498, 0.0, false))
+            obras.add(Obra(5, 5, "Nenúfares", "Pintura", 1906, 0.0, true))
         }
     }
 }

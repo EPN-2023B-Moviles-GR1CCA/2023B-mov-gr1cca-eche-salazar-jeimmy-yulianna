@@ -13,6 +13,10 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".InformacionJE"
+            android:exported="false"
+            android:label="@string/title_activity_informacion_je" />
+        <activity
             android:name=".InfoObra"
             android:exported="false" />
         <activity
