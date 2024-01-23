@@ -8,8 +8,6 @@ import com.example.biexamenje.fragments.HomeFragment
 import com.example.biexamenje.fragments.ObrasFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +17,10 @@ class MainActivity : AppCompatActivity() {
         val artistasFragment = ArtistasFragment()
         val obrasFragment = ObrasFragment()
 
-        makeCurrentFragment(homeFragment)
 
-        bottom_navigation.setOnNavigationItemSelectedListener{
+        makeCurrentFragment(homeFragment)
+        val bottomNavigationView= findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnNavigationItemSelectedListener{
             when(it.itemId){
                 R.id.home->makeCurrentFragment(homeFragment)
                 R.id.artistas->makeCurrentFragment(artistasFragment)
