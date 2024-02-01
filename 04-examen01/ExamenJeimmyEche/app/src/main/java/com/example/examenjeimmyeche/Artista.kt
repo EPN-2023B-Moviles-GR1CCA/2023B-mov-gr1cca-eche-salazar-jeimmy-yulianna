@@ -19,7 +19,6 @@ class Artista(
         this.esInternacional; esInternacional;
 
     }
-
     override fun toString(): String {
         return "${idArtista}\t${nombre}"
     }
