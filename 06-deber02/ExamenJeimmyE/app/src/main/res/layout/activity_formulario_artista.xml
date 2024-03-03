@@ -25,6 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
         tools:text="CREAR ARTISTA" />
 
     <EditText
@@ -38,33 +39,19 @@
         app:layout_constraintEnd_toEndOf="@+id/pt_obras_artista"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/pt_obras_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_obras_artista" />
-
-    <EditText
-        android:id="@+id/pt_id_artista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:ems="10"
-        android:hint="id"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/tv_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/pt_obras_artista"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/pt_nombre_artista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/pt_id_artista"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/pt_id_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_id_artista" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="165dp" />
 
     <EditText
         android:id="@+id/pt_obras_artista"
@@ -77,7 +64,8 @@
         app:layout_constraintEnd_toEndOf="@+id/pt_nombre_artista"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/pt_nombre_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_nombre_artista" />
+        app:layout_constraintTop_toBottomOf="@+id/pt_nombre_artista"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Switch
         android:id="@+id/sw_internacional_artista"
@@ -89,7 +77,8 @@
         app:layout_constraintEnd_toEndOf="@+id/pt_pais_artista"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/pt_pais_artista"
-        app:layout_constraintTop_toBottomOf="@+id/pt_pais_artista" />
+        app:layout_constraintTop_toBottomOf="@+id/pt_pais_artista"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btn_guardar_artista"
@@ -115,6 +104,7 @@
         app:layout_constraintEnd_toEndOf="@+id/td_nacimiento_artista"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/td_nacimiento_artista"
-        app:layout_constraintTop_toBottomOf="@+id/td_nacimiento_artista" />
+        app:layout_constraintTop_toBottomOf="@+id/td_nacimiento_artista"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

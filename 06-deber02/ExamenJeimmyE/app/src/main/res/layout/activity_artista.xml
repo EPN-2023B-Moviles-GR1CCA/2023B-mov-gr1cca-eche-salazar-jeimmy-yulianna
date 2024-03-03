@@ -25,18 +25,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
         tools:text="GESTION ARTISTAS" />
 
     <ListView
         android:id="@+id/lv_artistas"
-        android:layout_width="0dp"
-        android:layout_height="489dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="305dp"
+        android:layout_height="456dp"
+        android:layout_marginTop="124dp"
         android:cacheColorHint="#009688"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
@@ -55,18 +56,23 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="48dp"
         android:text="AGREGAR"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_artistas" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="92dp"
         android:layout_height="72dp"
-        app:srcCompat="@drawable/baseline_color_lens_24"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        app:srcCompat="@drawable/baseline_color_lens_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

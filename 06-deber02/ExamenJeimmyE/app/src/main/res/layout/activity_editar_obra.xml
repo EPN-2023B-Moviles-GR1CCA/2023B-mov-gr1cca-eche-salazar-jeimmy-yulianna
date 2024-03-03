@@ -25,6 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
         tools:text="EDITAR OBRA" />
 
     <TextView
@@ -45,10 +46,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
         tools:text="EDITAR OBRA" />
 
     <Button
-        android:id="@+id/btn_guardar_obra"
+        android:id="@+id/btn_editar_obra"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +72,8 @@
         app:layout_constraintEnd_toEndOf="@+id/tv_title_obra"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/tv_title_obra"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_id_artista_obra"
@@ -83,7 +86,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_id_obra"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/et_id_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_id_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/et_id_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_titulo_obra"
@@ -96,7 +100,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_anio_obra"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_anio_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_anio_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/et_anio_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_anio_obra"
@@ -109,7 +114,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_id_artista_obra"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_id_artista_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_id_artista_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/et_id_artista_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_disciplina_obra"
@@ -122,7 +128,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_titulo_obra"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_titulo_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_titulo_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/et_titulo_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_valor_obra"
@@ -135,7 +142,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_disciplina_obra"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_disciplina_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_disciplina_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/et_disciplina_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Switch
         android:id="@+id/sw_abstracta_obra"
@@ -148,6 +156,7 @@
         app:layout_constraintEnd_toEndOf="@+id/et_valor_obra"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_valor_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_valor_obra" />
+        app:layout_constraintTop_toBottomOf="@+id/et_valor_obra"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

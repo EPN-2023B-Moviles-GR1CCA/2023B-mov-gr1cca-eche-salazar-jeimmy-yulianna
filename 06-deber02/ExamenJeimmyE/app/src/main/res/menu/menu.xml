@@ -11,6 +11,6 @@
         android:icon="@android:drawable/ic_menu_delete"
         android:title="Eliminar" />
     <item
-        android:id="@+id/mi_verPersonajes"
-        android:title="Ver Personajes" />
+        android:id="@+id/mi_verDetalles"
+        android:title="Ver Detalles" />
 </menu>
