@@ -44,19 +44,19 @@ class ObraBD : AppCompatActivity() {
         val tvNombre = findViewById<TextView>(R.id.tv_nombre_artista)
         tvNombre.text = "Nombre: ${nombreArtista}"
 
-        val fechaNac=intent.getStringExtra("fechaNac")
+        val fechaNac=intent.getStringExtra("fechaNacimiento")
         val tvFecha = findViewById<TextView>(R.id.tv_fecha_artista)
-        tvFecha.text = "Fecha: "+ fechaNac
+        tvFecha.text = "Fecha: ${fechaNac}"
 
-        val cantObras=intent.getIntExtra("cantObras", 0)
+        val cantObras=intent.getIntExtra("cantidadObras", 0)
         val tvObras = findViewById<TextView>(R.id.tv_obras_artista)
         tvObras.text = "Obras: ${cantObras}"
 
-        val esIntern=intent.getBooleanExtra("esIntern", false)
+        val esIntern=intent.getBooleanExtra("esInternacional", false)
         val tvInternacional = findViewById<TextView>(R.id.tv_internacional_artista)
         tvInternacional.text=  "Internacional: ${esIntern}"
 
-        val paisNac=intent.getStringExtra("paisNac")
+        val paisNac=intent.getStringExtra("paisNacimiento")
         val tvPais = findViewById<TextView>(R.id.tv_pais_artista)
         tvPais.text = "País: ${paisNac}"
 
@@ -69,7 +69,7 @@ class ObraBD : AppCompatActivity() {
         val botonNuevaObra = findViewById<Button>(R.id.btn_nueva_obra)
         botonNuevaObra.setOnClickListener{
             val intent = Intent(this, FormularioObra::class.java)
-            intent.putExtra("idActor",idArtista)
+            intent.putExtra("idArtista",idArtista)
             startActivity(intent)
         }
 
@@ -153,7 +153,7 @@ class ObraBD : AppCompatActivity() {
             adaptador.addAll(obras)
             adaptador.notifyDataSetChanged()
         } else {
-            mostrarSnackbar("No hay personajes para este Actor")
+            mostrarSnackbar("No hay obras para este Artista")
         }
     }
 

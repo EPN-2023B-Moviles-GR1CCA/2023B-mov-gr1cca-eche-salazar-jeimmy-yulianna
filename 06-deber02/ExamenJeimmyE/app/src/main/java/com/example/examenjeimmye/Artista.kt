@@ -43,7 +43,7 @@ class Artista(
         contenedor.put("fechaNacimiento", this.fechaNacimiento)
         contenedor.put("cantidadObras", this.cantidadObras)
         contenedor.put("paisNacimiento", this.paisNacimiento)
-        contenedor.put("esInternacinal", if (this.esInternacional) 1 else 0)
+        contenedor.put("esInternacional", if (this.esInternacional) 1 else 0)
         val crear = db.insert(
             "ARTISTA",
             null,
@@ -56,7 +56,7 @@ class Artista(
     fun eliminarArtista(context: Context): Boolean {
         val db = SQLiteHelper(context).writableDatabase
         val seleccion = arrayOf(this.idArtista.toString())
-        val eliminar = db.delete("ARTISTA", "id=?", seleccion)
+        val eliminar = db.delete("ARTISTA", "idArtista=?", seleccion)
         db.close()
         return eliminar != -1
     }
@@ -70,7 +70,7 @@ class Artista(
         contenedor.put("cantidadObras", this.cantidadObras)
         contenedor.put("paisNacimiento", this.paisNacimiento)
         contenedor.put("esInternacinal", if (this.esInternacional) 1 else 0)
-        val actulizar = db.update("ARTISTA", contenedor, "id=?", seleccion)
+        val actulizar = db.update("ARTISTA", contenedor, "idArtista=?", seleccion)
         db.close()
         return actulizar != -1
 
@@ -80,9 +80,9 @@ class Artista(
         val esInternacional = if(this.esInternacional) "si" else "no"
         return "IdArtista: $idArtista\n" +
                 "Nombre: $nombre\n" +
-                "FechaNacimiento: $fechaNacimiento" +
-                "CantidadObras: $cantidadObras" +
-                "paisNacimiento: $paisNacimiento" +
+                "FechaNacimiento: $fechaNacimiento\n" +
+                "CantidadObras: $cantidadObras\n" +
+                "paisNacimiento: $paisNacimiento\n" +
                 "\nesInternacional: $esInternacional\n"
     }
 

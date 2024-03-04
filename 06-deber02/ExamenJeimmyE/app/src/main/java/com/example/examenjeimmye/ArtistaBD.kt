@@ -41,8 +41,8 @@ class ArtistaBD : AppCompatActivity() {
         adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, mutableListOf())
         listView.adapter = adaptador
 
-        val botonNuevoActor = findViewById<Button>(R.id.btn_nuevo_artista)
-        botonNuevoActor.setOnClickListener {
+        val botonNuevoArtista = findViewById<Button>(R.id.btn_nuevo_artista)
+        botonNuevoArtista.setOnClickListener {
             irActividad(FormularioArtista::class.java)
         }
 
@@ -84,7 +84,7 @@ class ArtistaBD : AppCompatActivity() {
                 val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
                 val artista = listView.adapter.getItem(info.position) as Artista
                 artista.eliminarArtista(this);
-                mostrarSnackbar("Actor \"${artista.nombre}\" con id = ${artista.idArtista} ha sido eliminado")
+                mostrarSnackbar("Artista \"${artista.nombre}\" con id = ${artista.idArtista} ha sido eliminado")
                 actualizarListView()
                 return true
             }
@@ -94,6 +94,10 @@ class ArtistaBD : AppCompatActivity() {
                 val intent = Intent(this, ObraBD::class.java)
                 intent.putExtra("idArtista", artista.idArtista)
                 intent.putExtra("nombreArtista", artista.nombre)
+                intent.putExtra("fechaNacimiento", artista.fechaNacimiento)
+                intent.putExtra("cantidadObras", artista.cantidadObras)
+                intent.putExtra("paisNacimiento", artista.paisNacimiento)
+                intent.putExtra("esInternacional", artista.esInternacional)
                 startActivity(intent)
                 return true
             }

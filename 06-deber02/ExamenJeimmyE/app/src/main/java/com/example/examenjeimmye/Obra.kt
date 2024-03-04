@@ -27,7 +27,7 @@ class Obra (
                     val anioCreacion = getInt(getColumnIndexOrThrow("anioCreacion"))
                     val valorEstimado = getDouble(getColumnIndexOrThrow("valorEstimado"))
                     val esAbstracta = getInt(getColumnIndexOrThrow("esAbstracta")) != 0 // Convertir Int a Boolean
-                    val idActor = getInt(getColumnIndexOrThrow("actor_id"))
+                    val idArtista = getInt(getColumnIndexOrThrow("idArtista"))
                     obras.add(Obra(id, titulo, disciplinaArtistica, anioCreacion, valorEstimado, esAbstracta, idArtista))
                 }
             }
