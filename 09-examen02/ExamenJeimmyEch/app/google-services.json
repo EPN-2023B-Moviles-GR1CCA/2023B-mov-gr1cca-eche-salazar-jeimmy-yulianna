@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050328096115",
+    "project_id": "biiexamenjeche",
+    "storage_bucket": "biiexamenjeche.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050328096115:android:99b45f49308e5ef41eb906",
+        "android_client_info": {
+          "package_name": "com.example.examenjeimmyeche"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg1YNN_sYYhO3Rtxt3Wd37pJY4YOzOUx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
