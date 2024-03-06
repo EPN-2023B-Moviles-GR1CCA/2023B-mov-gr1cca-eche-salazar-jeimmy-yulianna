@@ -8,6 +8,23 @@
     android:background="#FFFFFF"
     tools:context=".FormularioObra">
 
+    <EditText
+        android:id="@+id/et_id_obra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#272727"
+        app:layout_constraintBottom_toTopOf="@+id/et_anio_obra"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_obra"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_obra"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_obra"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/tv_title_obra"
         android:layout_width="0dp"
@@ -37,7 +54,7 @@
         android:background="#009688"
         android:fontFamily="casual"
         android:lineSpacingExtra="14sp"
-        android:text="CREAR OBRA"
+        android:text="EDITAR OBRA"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -56,45 +73,12 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="100dp"
         android:text="GUARDAR"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/et_id_obra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="ID"
-        android:inputType="text"
-        android:textColor="#000000"
-        android:textColorHint="#272727"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title_obra"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/tv_title_obra"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_obra"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/et_id_artista_obra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="ID Artista"
-        android:inputType="text"
-        android:textColor="#000000"
-        android:textColorHint="#272727"
-        app:layout_constraintEnd_toEndOf="@+id/et_id_obra"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/et_id_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_id_obra"
-        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_titulo_obra"
@@ -116,16 +100,17 @@
         android:id="@+id/et_anio_obra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Año Creacion"
         android:inputType="text"
         android:textColor="#000000"
         android:textColorHint="#272727"
-        app:layout_constraintEnd_toEndOf="@+id/et_id_artista_obra"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_id_artista_obra"
-        app:layout_constraintTop_toBottomOf="@+id/et_id_artista_obra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_obra"
+        app:layout_constraintVertical_bias="0.286"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText

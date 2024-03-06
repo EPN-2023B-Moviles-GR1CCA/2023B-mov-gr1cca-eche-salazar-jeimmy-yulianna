@@ -4,11 +4,13 @@
 
     <item
         android:id="@+id/mi_editar"
+        android:icon="@android:drawable/ic_menu_edit"
         android:title="Editar" />
     <item
         android:id="@+id/mi_eliminar"
+        android:icon="@android:drawable/ic_menu_delete"
         android:title="Eliminar" />
     <item
-        android:id="@+id/mi_detalles"
-        android:title="Detalles" />
+        android:id="@+id/mi_verDetalles"
+        android:title="Ver Detalles" />
 </menu>
